@@ -1,0 +1,347 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5E1DA;  /* Soft beige background */
+    color: #222; /* Elegant black text */
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    font-weight: 700; /* Increased boldness for all text */
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800; /* Extra bold for h1 */
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Bold for h2 */
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700; /* Bold h3 */
+}
+
+p {
+    font-size: 18px;
+    font-weight: 700; /* Bold text for paragraphs */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BUTTON STYLES */
+button {
+    background-color: #FFC0CB; /* Blush Pink */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: 700; /* Bold buttons */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #B76E79; /* Rose Gold hover */
+    transform: scale(1.05);
+}
+
+/* HEADER STYLES */
+header {
+    background-color: #d63384;
+    color: white;
+    padding: 15px;
+    font-weight: 700; /* Bold header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700; /* Bold links in navigation */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFC0CB;
+    transition: color 0.3s ease;
+}
+
+/* HOME SECTION */
+.home {
+    background-image: url('./'); /* Add your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-content {
+    background: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay */
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+}
+
+.home h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800; /* Extra bold h1 */
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BUTTON STYLES */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #B76E79; /* Rose Gold */
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-weight: 700; /* Bold buttons */
+}
+
+.btn:hover {
+    background-color: #FFC0CB; /* Blush Pink */
+}
+
+/* GALLERY SECTION */
+#gallery {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 30px;
+}
+
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* CONTACT SECTION */
+#contact {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: 700; /* Bold WhatsApp button */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/* SERVICES SECTION */
+.services {
+    text-align: center;
+    padding: 50px;
+    background-color: #F5E1DA; /* Soft Beige */
+}
+
+.services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #B76E79; /* Rose Gold */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold h2 */
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    color: #B76E79; /* Rose Gold */
+    margin: 10px 0;
+    font-weight: 700; /* Bold h3 */
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #444;
+    font-weight: 700; /* Bold service descriptions */
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .home {
+        height: 80vh; /* Reduce height on smaller screens */
+        padding: 20px;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    .home h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    .service-container {
+        flex-direction: column; /* Stack services vertically */
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%; /* Make service cards wider on mobile */
+    }
+
+    .about-me {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 120px; /* Adjust logo size */
+    }
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* FADE-IN EFFECT */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* IMAGE STYLES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.intro-video {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.home h1 {
+    font-size: 24px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+}
